@@ -46,8 +46,17 @@ public class FloraController {
 		
 		return repository.findById(id)
 			.map(Flora -> {
-				Flora.setName(newFlora.getName());
-				Flora.setRole(newFlora.getRole());
+				Flora.setLat(newFlora.getLat());
+				Flora.setRus(newFlora.getRus());
+				Flora.setStatus(newFlora.getStatus());
+				Flora.setPoduvalnoe(newFlora.getPoduvalnoe());
+				Flora.setVishenskoe(newFlora.getVishenskoe());
+				Flora.setMaslovo(newFlora.getMaslovo());
+				Flora.setChernoe(newFlora.getChernoe());
+				Flora.setVerhovie(newFlora.getVerhovie());
+				Flora.setPerehodnie(newFlora.getPerehodnie());
+				Flora.setTravyanie(newFlora.getTravyanie());
+
 				return repository.save(Flora);
 			})
 			.orElseGet(() -> {

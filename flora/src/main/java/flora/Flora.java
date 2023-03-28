@@ -6,64 +6,45 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+
 @Entity
+@Data
+@NoArgsConstructor
+@RequiredArgsConstructor
 class Flora {
 
 	private @Id @GeneratedValue Long id;
-	private String name;
-	private String role;
+	@NonNull 
+	private String lat;
 
-	Flora() {}
+	@NonNull 
+	private String rus;
 
-	Flora(String name, String role) {
+	@NonNull 
+	private String status;
 
-		this.name = name;
-		this.role = role;
-	}
+	@NonNull 
+	private String poduvalnoe;
 
-	public Long getId() {
-		return this.id;
-	}
+	@NonNull 
+	private String vishenskoe;
 
-	public String getName() {
-		return this.name;
-	}
+	@NonNull 
+	private String maslovo;
 
-	public String getRole() {
-		return this.role;
-	}
+	@NonNull 
+	private String chernoe;
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+	@NonNull 
+	private String verhovie;
 
-	public void setName(String name) {
-		this.name = name;
-	}
+	@NonNull 
+	private String perehodnie;
 
-	public void setRole(String role) {
-		this.role = role;
-	}
-
-	@Override
-	public boolean equals(Object o) {
-
-		if (this == o)
-			return true;
-		if (!(o instanceof Flora))
-			return false;
-            Flora flora = (Flora) o;
-		return Objects.equals(this.id, flora.id) && Objects.equals(this.name, flora.name)
-				&& Objects.equals(this.role, flora.role);
-	}
-
-	@Override
-	public int hashCode() {
-		return Objects.hash(this.id, this.name, this.role);
-	}
-
-	@Override
-	public String toString() {
-		return "Flora{" + "id=" + this.id + ", name='" + this.name + '\'' + ", role='" + this.role + '\'' + '}';
-	}
+	@NonNull 
+	private String travyanie;
 }

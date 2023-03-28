@@ -14,8 +14,8 @@ class LoadDatabase {
 	CommandLineRunner initDatabase(FloraRepository repository) {
 
 		return args -> {
-			log.info("Preloading " + repository.save(new Flora("Bilbo Baggins", "burglar")));
-			log.info("Preloading " + repository.save(new Flora("Frodo Baggins", "thief")));
+			log.info("Preloading " + repository.save(new Flora("Athyrium filix-femina (L.) Roth", "Кочедыжник женский "," "," "," "," ","1"," "," "," ")));
+			log.info("Preloading " + repository.save(new Flora("Athyrium filix-femina (L.) Roth", "Кочедыжник женский "," "," "," "," ","1"," "," "," ")));
 		};
 	}    
 }
