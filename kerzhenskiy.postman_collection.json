@@ -1,0 +1,560 @@
+{
+	"info": {
+		"_postman_id": "58c8a1f2-b307-485d-865a-ccc5e6f99e7a",
+		"name": "kerzhenskiy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2489074"
+	},
+	"item": [
+		{
+			"name": "Galina",
+			"item": [
+				{
+					"name": "Post (create)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"MeteoDate\":\"02.06.22\",\"MeteoTime\":\"19:00\",\"WindDir\":\"Юг\",\"WindSpeed\":\"1.1\",\"Pressure\":\"750\",\"TempMin\":\"19.1\",\"TempMax\":\"30.3\",\"Precipitation\":\"10.0\",\"SunshineDuration\":\"12.35\",\"DewPoint\":\"89.3\",\"SnowLevelWeatherSite\":\"210\",\"SnowCoverage\":\"100\",\"SnowLevelForest\":\"190\",\"AverageSnowDensity\":\"500.23\",\"MoistureWaterInSnow\":\"10\",\"SnowCover\":\"полностью\",\"SnowState\":\"талый\",\"NRustayskoyeWaterLevel\":\"15\",\"NRustayskoyeTemp\":\"20.1\",\"NRustayskoyepH\":\"5.5\",\"NRustayskoyeElConduct\":\"237\",\"NRustayskoyeWaterColor\":\"10\",\"NRustayskoyeOxygen\":\"80.3\",\"NRustayskoyeBPK5\":\"12.12\",\"KrugloeWaterLevel\":\"10\",\"KrugloeTemp\":\"20.2\",\"KrugloepH\":\"5.5\",\"KrugloeElConduct\":\"123\",\"KrugloeWaterColor\":\"10\",\"KrugloeOxygen\":\"81.1\",\"KrugloeBPK5\":\"12.12\",\"KalachikWaterLevel\":\"220\",\"KalachikTemp\":\"15.9\",\"KalachikpH\":\"5.5\",\"KalachikElConduct\":\"123\",\"KalachikWaterColor\":\"9\",\"KalachikOxygen\":\"20.2\",\"KalachikBPK5\":\"123.321\",\"MakhovskoeWaterLevel\":\"120\",\"MakhovskoeTemp\":\"17.1\",\"MakhovskoepH\":\"5.6\",\"MakhovskoeElConduct\":\"300\",\"MakhovskoeWaterColor\":\"10\",\"MakhovskoeOxygen\":\"70.2\",\"MakhovskoeBPK5\":\"123.987\",\"KerzhenetsWaterLevel\":\"253\",\"KerzhenetsTemp\":\"20.1\",\"KerzhenetspH\":\"6.6\",\"KerzhenetsElConduct\":\"125\",\"KerzhenetsWaterColor\":\"9\",\"KerzhenetsOxygen\":\"81.2\",\"KerzhenetsBPK5\":\"123.453\",\"VishnyaWaterLevel\":\"245\",\"VishnyaTemp\":\"21.1\",\"VishnyapH\":\"4.5\",\"VishnyaElConduct\":\"345\",\"VishnyaWaterColor\":\"8\",\"VishnyaOxygen\":\"87.3\",\"VishnyaBPK5\":\"123.123\",\"WellWaterLevel\":\"231\",\"WellTemp\":\"18.1\",\"WellpH\":\"5.6\",\"WellElConduct\":\"123\",\"WellWaterColor\":\"9\",\"WellOxygen\":\"80.3\",\"WellBPK5\":\"123.321\",\"VishenskoeWaterLevel\":\"120\",\"VishenskoeTemp\":\"20.1\",\"VishenskoepH\":\"5.5\",\"VishenskoeElConduct\":\"789\",\"VishenskoeWaterColor\":\"11\",\"VishenskoeOxygen\":\"90.1\",\"VishenskoeBPK5\":\"123.32\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/observ",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"observ"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get(all)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/observ",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"observ"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put(edit)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"1654182000000\",\"MeteoDate\":\"02.06.22\",\"MeteoTime\":\"18:00\",\"WindDir\":\"Север\",\"WindSpeed\":\"1.1\",\"Pressure\":\"750\",\"TempMin\":\"19.1\",\"TempMax\":\"30.3\",\"Precipitation\":\"10.0\",\"SunshineDuration\":\"12.35\",\"DewPoint\":\"89.3\",\"SnowLevelWeatherSite\":\"210\",\"SnowCoverage\":\"100\",\"SnowLevelForest\":\"190\",\"AverageSnowDensity\":\"500.23\",\"MoistureWaterInSnow\":\"10\",\"SnowCover\":\"полностью\",\"SnowState\":\"талый\",\"NRustayskoyeWaterLevel\":\"15\",\"NRustayskoyeTemp\":\"20.1\",\"NRustayskoyepH\":\"5.5\",\"NRustayskoyeElConduct\":\"237\",\"NRustayskoyeWaterColor\":\"10\",\"NRustayskoyeOxygen\":\"80.3\",\"NRustayskoyeBPK5\":\"12.12\",\"KrugloeWaterLevel\":\"10\",\"KrugloeTemp\":\"20.2\",\"KrugloepH\":\"5.5\",\"KrugloeElConduct\":\"123\",\"KrugloeWaterColor\":\"10\",\"KrugloeOxygen\":\"81.1\",\"KrugloeBPK5\":\"12.12\",\"KalachikWaterLevel\":\"220\",\"KalachikTemp\":\"15.9\",\"KalachikpH\":\"5.5\",\"KalachikElConduct\":\"123\",\"KalachikWaterColor\":\"9\",\"KalachikOxygen\":\"20.2\",\"KalachikBPK5\":\"123.321\",\"MakhovskoeWaterLevel\":\"120\",\"MakhovskoeTemp\":\"17.1\",\"MakhovskoepH\":\"5.6\",\"MakhovskoeElConduct\":\"300\",\"MakhovskoeWaterColor\":\"10\",\"MakhovskoeOxygen\":\"70.2\",\"MakhovskoeBPK5\":\"123.987\",\"KerzhenetsWaterLevel\":\"253\",\"KerzhenetsTemp\":\"20.1\",\"KerzhenetspH\":\"6.6\",\"KerzhenetsElConduct\":\"125\",\"KerzhenetsWaterColor\":\"9\",\"KerzhenetsOxygen\":\"81.2\",\"KerzhenetsBPK5\":\"123.453\",\"VishnyaWaterLevel\":\"245\",\"VishnyaTemp\":\"21.1\",\"VishnyapH\":\"4.5\",\"VishnyaElConduct\":\"345\",\"VishnyaWaterColor\":\"8\",\"VishnyaOxygen\":\"87.3\",\"VishnyaBPK5\":\"123.123\",\"WellWaterLevel\":\"231\",\"WellTemp\":\"18.1\",\"WellpH\":\"5.6\",\"WellElConduct\":\"123\",\"WellWaterColor\":\"9\",\"WellOxygen\":\"80.3\",\"WellBPK5\":\"123.321\",\"VishenskoeWaterLevel\":\"120\",\"VishenskoeTemp\":\"20.1\",\"VishenskoepH\":\"5.5\",\"VishenskoeElConduct\":\"789\",\"VishenskoeWaterColor\":\"11\",\"VishenskoeOxygen\":\"90.1\",\"VishenskoeBPK5\":\"123.32\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/observ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"observ"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Davis",
+			"item": [
+				{
+					"name": "Post(create)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"MeteoDate\":\"02.06.22\",\"MeteoTime\":\"12:52\",\"TempOut\":\"21.9\",\"HiTemp\":\"21.9\",\"LowTemp\":\"21.9\",\"OutHum\":\"59\",\"DewPt\":\"13.6\",\"WindSpeed\":\"0.0\",\"WindDir\":\"---\",\"WindRun\":\"0.0\",\"HiSpeed\":\"0.0\",\"HiDir\":\"---\",\"WindChill\":\"21.9\",\"HeatIndex\":\"21.8\",\"THWIndex\":\"21.8\",\"THSWIndex\":\"25.6\",\"Bar\":\"1026.5\",\"Rain\":\"0.0\",\"RainRate\":\"0.0\",\"SolarRad\":\"373.0\",\"SolarEnergy\":\"5.35\",\"HiSolarRad\":\"373.0\",\"UVIndex\":\"3.2\",\"UVDose\":\"0.23\",\"HiUV\":\"3.2\",\"HeatDD\":\"0.0\",\"CoolDD\":\"0.025\",\"InTemp\":\"25.4\",\"InHum\":\"48.0\",\"InDew\":\"13.6\",\"InHeat\":\"25.2\",\"InEMC\":\"8.9\",\"InAirDensity\":\"1.1803\",\"ET\":\"0.0\",\"Soil1Moist\":\"7\",\"Soil2Moist\":\"4\",\"Soil3Moist\":\"3\",\"Soil4Moist\":\"4\",\"SoilTemp1\":\"17.8\",\"SoilTemp2\":\"13.3\",\"SoilTemp3\":\"12.2\",\"SoilTemp4\":\"11.7\",\"WindSamp\":\"0\",\"WindTx\":\"4\",\"ISSRecept\":\"0.0\",\"ArcInt\":\"10\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/davis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"davis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put(edit)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"1654161000000\",\"MeteoDate\":\"02.06.22\",\"MeteoTime\":\"12:10\",\"TempOut\":\"22.9\",\"HiTemp\":\"21.9\",\"LowTemp\":\"21.9\",\"OutHum\":\"59\",\"DewPt\":\"13.6\",\"WindSpeed\":\"0.0\",\"WindDir\":\"Север\",\"WindRun\":\"0.0\",\"HiSpeed\":\"0.0\",\"HiDir\":\"---\",\"WindChill\":\"21.9\",\"HeatIndex\":\"21.8\",\"THWIndex\":\"21.8\",\"THSWIndex\":\"25.6\",\"Bar\":\"1026.5\",\"Rain\":\"0.0\",\"RainRate\":\"0.0\",\"SolarRad\":\"373.0\",\"SolarEnergy\":\"5.35\",\"HiSolarRad\":\"373.0\",\"UVIndex\":\"3.2\",\"UVDose\":\"0.23\",\"HiUV\":\"3.2\",\"HeatDD\":\"0.0\",\"CoolDD\":\"0.025\",\"InTemp\":\"25.4\",\"InHum\":\"48.0\",\"InDew\":\"13.6\",\"InHeat\":\"25.2\",\"InEMC\":\"8.9\",\"InAirDensity\":\"1.1803\",\"ET\":\"0.0\",\"Soil1Moist\":\"7\",\"Soil2Moist\":\"4\",\"Soil3Moist\":\"3\",\"Soil4Moist\":\"4\",\"SoilTemp1\":\"17.8\",\"SoilTemp2\":\"13.3\",\"SoilTemp3\":\"12.2\",\"SoilTemp4\":\"11.7\",\"WindSamp\":\"0\",\"WindTx\":\"4\",\"ISSRecept\":\"0.0\",\"ArcInt\":\"10\"},{\"id\":\"1654161600000\",\"MeteoDate\":\"02.06.22\",\"MeteoTime\":\"12:20\",\"TempOut\":\"22.1\",\"HiTemp\":\"22.1\",\"LowTemp\":\"21.9\",\"OutHum\":\"62\",\"DewPt\":\"14.4\",\"WindSpeed\":\"0.0\",\"WindDir\":\"---\",\"WindRun\":\"0.0\",\"HiSpeed\":\"0.0\",\"HiDir\":\"---\",\"WindChill\":\"22.1\",\"HeatIndex\":\"22.0\",\"THWIndex\":\"22.0\",\"THSWIndex\":\"26.1\",\"Bar\":\"1026.4\",\"Rain\":\"0.0\",\"RainRate\":\"0.0\",\"SolarRad\":\"401.0\",\"SolarEnergy\":\"5.75\",\"HiSolarRad\":\"459.0\",\"UVIndex\":\"3.3\",\"UVDose\":\"0.24\",\"HiUV\":\"3.5\",\"HeatDD\":\"0.0\",\"CoolDD\":\"0.026\",\"InTemp\":\"25.8\",\"InHum\":\"47.0\",\"InDew\":\"13.6\",\"InHeat\":\"25.6\",\"InEMC\":\"8.68\",\"InAirDensity\":\"1.1787\",\"ET\":\"0.0\",\"Soil1Moist\":\"7\",\"Soil2Moist\":\"4\",\"Soil3Moist\":\"3\",\"Soil4Moist\":\"4\",\"SoilTemp1\":\"17.8\",\"SoilTemp2\":\"13.3\",\"SoilTemp3\":\"12.2\",\"SoilTemp4\":\"11.7\",\"WindSamp\":\"0\",\"WindTx\":\"4\",\"ISSRecept\":\"0.0\",\"ArcInt\":\"10\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/davis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"davis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post(create raw)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "02.06.22\t12:55\t21.9\t21.9\t21.9\t59\t13.6\t0.0\t---\t0.00\t0.0\t---\t21.9\t21.8\t21.8\t25.6\t1026.5\t0.00\t0.0\t373\t5.35\t373\t3.2\t0.23\t3.2\t0.000\t0.025\t25.4\t48\t13.6\t25.2\t8.90\t1.1803\t0.00\t7\t4\t3\t4\t17.8\t13.3\t12.2\t11.7\t0\t4\t0.0\t10",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/davis/raw",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"davis",
+								"raw"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "158.160.42.201 Galina",
+			"item": [
+				{
+					"name": "Post (create)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"MeteoDate\":\"02.06.22\",\"MeteoTime\":\"19:00\",\"WindDir\":\"Юг\",\"WindSpeed\":\"1.1\",\"Pressure\":\"750\",\"TempMin\":\"19.1\",\"TempMax\":\"30.3\",\"Precipitation\":\"10.0\",\"SunshineDuration\":\"12.35\",\"DewPoint\":\"89.3\",\"SnowLevelWeatherSite\":\"210\",\"SnowCoverage\":\"100\",\"SnowLevelForest\":\"190\",\"AverageSnowDensity\":\"500.23\",\"MoistureWaterInSnow\":\"10\",\"SnowCover\":\"полностью\",\"SnowState\":\"талый\",\"NRustayskoyeWaterLevel\":\"15\",\"NRustayskoyeTemp\":\"20.1\",\"NRustayskoyepH\":\"5.5\",\"NRustayskoyeElConduct\":\"237\",\"NRustayskoyeWaterColor\":\"10\",\"NRustayskoyeOxygen\":\"80.3\",\"NRustayskoyeBPK5\":\"12.12\",\"KrugloeWaterLevel\":\"10\",\"KrugloeTemp\":\"20.2\",\"KrugloepH\":\"5.5\",\"KrugloeElConduct\":\"123\",\"KrugloeWaterColor\":\"10\",\"KrugloeOxygen\":\"81.1\",\"KrugloeBPK5\":\"12.12\",\"KalachikWaterLevel\":\"220\",\"KalachikTemp\":\"15.9\",\"KalachikpH\":\"5.5\",\"KalachikElConduct\":\"123\",\"KalachikWaterColor\":\"9\",\"KalachikOxygen\":\"20.2\",\"KalachikBPK5\":\"123.321\",\"MakhovskoeWaterLevel\":\"120\",\"MakhovskoeTemp\":\"17.1\",\"MakhovskoepH\":\"5.6\",\"MakhovskoeElConduct\":\"300\",\"MakhovskoeWaterColor\":\"10\",\"MakhovskoeOxygen\":\"70.2\",\"MakhovskoeBPK5\":\"123.987\",\"KerzhenetsWaterLevel\":\"253\",\"KerzhenetsTemp\":\"20.1\",\"KerzhenetspH\":\"6.6\",\"KerzhenetsElConduct\":\"125\",\"KerzhenetsWaterColor\":\"9\",\"KerzhenetsOxygen\":\"81.2\",\"KerzhenetsBPK5\":\"123.453\",\"VishnyaWaterLevel\":\"245\",\"VishnyaTemp\":\"21.1\",\"VishnyapH\":\"4.5\",\"VishnyaElConduct\":\"345\",\"VishnyaWaterColor\":\"8\",\"VishnyaOxygen\":\"87.3\",\"VishnyaBPK5\":\"123.123\",\"WellWaterLevel\":\"231\",\"WellTemp\":\"18.1\",\"WellpH\":\"5.6\",\"WellElConduct\":\"123\",\"WellWaterColor\":\"9\",\"WellOxygen\":\"80.3\",\"WellBPK5\":\"123.321\",\"VishenskoeWaterLevel\":\"120\",\"VishenskoeTemp\":\"20.1\",\"VishenskoepH\":\"5.5\",\"VishenskoeElConduct\":\"789\",\"VishenskoeWaterColor\":\"11\",\"VishenskoeOxygen\":\"90.1\",\"VishenskoeBPK5\":\"123.32\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://158.160.42.201:8081/observ",
+							"protocol": "http",
+							"host": [
+								"158",
+								"160",
+								"42",
+								"201"
+							],
+							"port": "8081",
+							"path": [
+								"observ"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get(all)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://158.160.42.201:8081/observ",
+							"protocol": "http",
+							"host": [
+								"158",
+								"160",
+								"42",
+								"201"
+							],
+							"port": "8081",
+							"path": [
+								"observ"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put(edit) Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"1654182000000\",\"MeteoDate\":\"02.06.22\",\"MeteoTime\":\"18:00\",\"WindDir\":\"Север\",\"WindSpeed\":\"1.1\",\"Pressure\":\"750\",\"TempMin\":\"19.1\",\"TempMax\":\"30.3\",\"Precipitation\":\"10.0\",\"SunshineDuration\":\"12.35\",\"DewPoint\":\"89.3\",\"SnowLevelWeatherSite\":\"210\",\"SnowCoverage\":\"100\",\"SnowLevelForest\":\"190\",\"AverageSnowDensity\":\"500.23\",\"MoistureWaterInSnow\":\"10\",\"SnowCover\":\"полностью\",\"SnowState\":\"талый\",\"NRustayskoyeWaterLevel\":\"15\",\"NRustayskoyeTemp\":\"20.1\",\"NRustayskoyepH\":\"5.5\",\"NRustayskoyeElConduct\":\"237\",\"NRustayskoyeWaterColor\":\"10\",\"NRustayskoyeOxygen\":\"80.3\",\"NRustayskoyeBPK5\":\"12.12\",\"KrugloeWaterLevel\":\"10\",\"KrugloeTemp\":\"20.2\",\"KrugloepH\":\"5.5\",\"KrugloeElConduct\":\"123\",\"KrugloeWaterColor\":\"10\",\"KrugloeOxygen\":\"81.1\",\"KrugloeBPK5\":\"12.12\",\"KalachikWaterLevel\":\"220\",\"KalachikTemp\":\"15.9\",\"KalachikpH\":\"5.5\",\"KalachikElConduct\":\"123\",\"KalachikWaterColor\":\"9\",\"KalachikOxygen\":\"20.2\",\"KalachikBPK5\":\"123.321\",\"MakhovskoeWaterLevel\":\"120\",\"MakhovskoeTemp\":\"17.1\",\"MakhovskoepH\":\"5.6\",\"MakhovskoeElConduct\":\"300\",\"MakhovskoeWaterColor\":\"10\",\"MakhovskoeOxygen\":\"70.2\",\"MakhovskoeBPK5\":\"123.987\",\"KerzhenetsWaterLevel\":\"253\",\"KerzhenetsTemp\":\"20.1\",\"KerzhenetspH\":\"6.6\",\"KerzhenetsElConduct\":\"125\",\"KerzhenetsWaterColor\":\"9\",\"KerzhenetsOxygen\":\"81.2\",\"KerzhenetsBPK5\":\"123.453\",\"VishnyaWaterLevel\":\"245\",\"VishnyaTemp\":\"21.1\",\"VishnyapH\":\"4.5\",\"VishnyaElConduct\":\"345\",\"VishnyaWaterColor\":\"8\",\"VishnyaOxygen\":\"87.3\",\"VishnyaBPK5\":\"123.123\",\"WellWaterLevel\":\"231\",\"WellTemp\":\"18.1\",\"WellpH\":\"5.6\",\"WellElConduct\":\"123\",\"WellWaterColor\":\"9\",\"WellOxygen\":\"80.3\",\"WellBPK5\":\"123.321\",\"VishenskoeWaterLevel\":\"120\",\"VishenskoeTemp\":\"20.1\",\"VishenskoepH\":\"5.5\",\"VishenskoeElConduct\":\"789\",\"VishenskoeWaterColor\":\"11\",\"VishenskoeOxygen\":\"90.1\",\"VishenskoeBPK5\":\"123.32\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/observ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"observ"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "158.160.42.201 Davis",
+			"item": [
+				{
+					"name": "Get(all)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://158.160.42.201:8082/davis",
+							"protocol": "http",
+							"host": [
+								"158",
+								"160",
+								"42",
+								"201"
+							],
+							"port": "8082",
+							"path": [
+								"davis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post(create raw) Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "02.06.22\t12:55\t21.9\t21.9\t21.9\t59\t13.6\t0.0\t---\t0.00\t0.0\t---\t21.9\t21.8\t21.8\t25.6\t1026.5\t0.00\t0.0\t373\t5.35\t373\t3.2\t0.23\t3.2\t0.000\t0.025\t25.4\t48\t13.6\t25.2\t8.90\t1.1803\t0.00\t7\t4\t3\t4\t17.8\t13.3\t12.2\t11.7\t0\t4\t0.0\t10",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/davis/raw",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"davis",
+								"raw"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Flora",
+			"item": [
+				{
+					"name": "Get(all)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Floras",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Floras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"id\": 3,\n        \"name\": \"Frodo Baggins 3\",\n        \"role\": \"thief 3\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Floras",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Floras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"id\": 3,\n        \"name\": \"Frodo Baggins upd\",\n        \"role\": \"thief\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Floras/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Floras",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Floras/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Floras",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Flora Prod",
+			"item": [
+				{
+					"name": "Get(all)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://51.250.6.53:8080/Floras",
+							"protocol": "http",
+							"host": [
+								"51",
+								"250",
+								"6",
+								"53"
+							],
+							"port": "8080",
+							"path": [
+								"Floras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"id\": 3,\n        \"name\": \"Frodo Baggins 3\",\n        \"role\": \"thief 3\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://51.250.6.194:8080/Floras",
+							"protocol": "http",
+							"host": [
+								"51",
+								"250",
+								"6",
+								"194"
+							],
+							"port": "8080",
+							"path": [
+								"Floras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"id\": 3,\n        \"name\": \"Frodo Baggins upd\",\n        \"role\": \"thief\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://51.250.6.194:8080/Floras/3",
+							"protocol": "http",
+							"host": [
+								"51",
+								"250",
+								"6",
+								"194"
+							],
+							"port": "8080",
+							"path": [
+								"Floras",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://51.250.6.194:8080/Floras/3",
+							"protocol": "http",
+							"host": [
+								"51",
+								"250",
+								"6",
+								"194"
+							],
+							"port": "8080",
+							"path": [
+								"Floras",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
